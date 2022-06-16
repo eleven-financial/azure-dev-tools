@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Azure.DevTools.App (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Azure.DevTools.App (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
