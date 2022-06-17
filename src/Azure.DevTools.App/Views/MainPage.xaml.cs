@@ -4,16 +4,16 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Azure.DevTools.App.Views;
 
-public sealed partial class DatabasesPage : Page
+public sealed partial class MainPage : Page
 {
-    public DatabasesViewModel ViewModel
+    public MainViewModel ViewModel
     {
         get;
     }
 
-    public DatabasesPage()
+    public MainPage()
     {
-        ViewModel = App.GetService<DatabasesViewModel>();
+        ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
     }
 }

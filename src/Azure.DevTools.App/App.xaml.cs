@@ -12,16 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
 
-// To learn more about WinUI3, see: https://docs.microsoft.com/windows/apps/winui/winui3/.
 namespace Azure.DevTools.App;
 
 public partial class App : Application
 {
-    // The .NET Generic Host provides dependency injection, configuration, logging, and other services.
-    // https://docs.microsoft.com/dotnet/core/extensions/generic-host
-    // https://docs.microsoft.com/dotnet/core/extensions/dependency-injection
-    // https://docs.microsoft.com/dotnet/core/extensions/configuration
-    // https://docs.microsoft.com/dotnet/core/extensions/logging
     private static readonly IHost _host = Host
         .CreateDefaultBuilder()
         .ConfigureServices((context, services) =>
@@ -41,9 +35,7 @@ public partial class App : Application
             services.AddSingleton<INavigationService, NavigationService>();
 
             // Core Services
-            services.AddSingleton<ISampleDataService, SampleDataService>();
             services.AddSingleton<IFileService, FileService>();
-
             services.AddSingleton<IAzVersionService, AzVersionService>();
             services.AddSingleton<IAzLoginService, AzLoginService>();
             services.AddSingleton<IAzResourceGroupService, AzResourceGroupService>();
@@ -52,18 +44,8 @@ public partial class App : Application
             // Views and ViewModels
             services.AddTransient<SettingsViewModel>();
             services.AddTransient<SettingsPage>();
-            services.AddTransient<DatabasesDetailViewModel>();
-            services.AddTransient<DatabasesDetailPage>();
-            services.AddTransient<DatabasesViewModel>();
-            services.AddTransient<DatabasesPage>();
-            services.AddTransient<KeyvaultsViewModel>();
-            services.AddTransient<KeyvaultsPage>();
-            services.AddTransient<KubernetesViewModel>();
-            services.AddTransient<KubernetesPage>();
-            services.AddTransient<AllToolsDetailViewModel>();
-            services.AddTransient<AllToolsDetailPage>();
-            services.AddTransient<AllToolsViewModel>();
-            services.AddTransient<AllToolsPage>();
+            services.AddTransient<MainViewModel>();
+            services.AddTransient<MainPage>();
             services.AddTransient<ShellPage>();
             services.AddTransient<ShellViewModel>();
 

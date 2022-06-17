@@ -118,25 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>Azure Developer Tools</value>
+    <value>Azure Developer Tools </value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Azure.DevTools.App</value>
+    <value>Azure Developer Tools</value>
   </data>
-  <data name="Shell_AllTools.Content" xml:space="preserve">
-    <value>All Tools</value>
-  </data>
-  <data name="Kubernetes_NoSelection.Text" xml:space="preserve">
-    <value>Select an item from the list.</value>
-  </data>
-  <data name="Shell_Kubernetes.Content" xml:space="preserve">
-    <value>Kubernetes (AKS)</value>
-  </data>
-  <data name="Shell_Keyvaults.Content" xml:space="preserve">
-    <value>Keyvaults</value>
-  </data>
-  <data name="Shell_Databases.Content" xml:space="preserve">
-    <value>Databases</value>
+  <data name="Shell_Main.Content" xml:space="preserve">
+    <value>Main</value>
   </data>
   <data name="Settings_Personalization.Text" xml:space="preserve">
     <value>Personalization</value>

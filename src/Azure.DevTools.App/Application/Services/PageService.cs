@@ -18,12 +18,7 @@ public class PageService : IPageService
 
     public PageService()
     {
-        Configure<AllToolsViewModel, AllToolsPage>();
-        Configure<AllToolsDetailViewModel, AllToolsDetailPage>();
-        Configure<KubernetesViewModel, KubernetesPage>();
-        Configure<KeyvaultsViewModel, KeyvaultsPage>();
-        Configure<DatabasesViewModel, DatabasesPage>();
-        Configure<DatabasesDetailViewModel, DatabasesDetailPage>();
+        Configure<MainViewModel, MainPage>();
         Configure<SettingsViewModel, SettingsPage>();
     }
 
