@@ -44,6 +44,11 @@ public partial class App : Application
             services.AddSingleton<ISampleDataService, SampleDataService>();
             services.AddSingleton<IFileService, FileService>();
 
+            services.AddSingleton<IAzVersionService, AzVersionService>();
+            services.AddSingleton<IAzLoginService, AzLoginService>();
+            services.AddSingleton<IAzResourceGroupService, AzResourceGroupService>();
+            services.AddSingleton<IAzKeyVaultService, AzKeyVaultService>();
+
             // Views and ViewModels
             services.AddTransient<SettingsViewModel>();
             services.AddTransient<SettingsPage>();
